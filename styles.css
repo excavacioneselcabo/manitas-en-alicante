@@ -75,3 +75,18 @@
 @media(max-width:390px){
   .agile-content h2{font-size:clamp(43px,13.5vw,54px);line-height:1.06;letter-spacing:-2.5px}
 }
+
+
+/* Contact — email-first conversion block */
+.contact-stage{padding:100px 5%;background:#071e30;color:#fff;display:grid;grid-template-columns:1.05fr .95fr;gap:8%;align-items:end;overflow:hidden}
+.contact-stage .kicker{color:#007bff}
+.contact-copy h2{font-size:clamp(52px,6.5vw,92px);line-height:.9;letter-spacing:-5px;margin:0 0 30px}
+.contact-copy h2 em{font-style:normal;color:#007bff}
+.contact-copy>p{font-size:18px;max-width:580px;color:#b8c8d4}
+.contact-copy .contact-place{font-size:13px;letter-spacing:1px;color:#7f97a9;margin-top:34px}
+.contact-action{border-top:1px solid #315067;padding-top:25px;min-width:0}
+.contact-action>span{font-size:11px;font-weight:900;letter-spacing:2px;color:#7f97a9}
+.contact-action>a{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px 0;border-bottom:1px solid #315067;color:#fff;font-size:clamp(20px,2.2vw,34px);font-weight:900;letter-spacing:-1px;overflow-wrap:anywhere}
+.contact-action>a b{color:#007bff;font-size:36px;flex:none}
+.contact-action>p{font-size:14px;color:#8fa4b4;margin-top:20px}
+@media(max-width:760px){.contact-stage{grid-template-columns:1fr;gap:55px;padding:70px 6%}.contact-copy h2{font-size:54px;letter-spacing:-3px}.contact-action>a{font-size:clamp(18px,5vw,24px);gap:10px}.contact-action>a b{font-size:28px}}
