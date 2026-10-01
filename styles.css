@@ -110,3 +110,27 @@
 .business-stage .sector-cloud>button:nth-child(1){font-size:clamp(40px,5vw,72px)!important;top:4%;left:2%}.business-stage .sector-cloud>button:nth-child(2){font-size:clamp(28px,3.7vw,55px)!important;top:25%;right:2%;color:#007bff}.business-stage .sector-cloud>button:nth-child(3){font-size:clamp(34px,4.5vw,66px)!important;top:44%;left:10%}.business-stage .sector-cloud>button:nth-child(4){font-size:clamp(27px,3.6vw,52px)!important;top:64%;right:4%}.business-stage .sector-cloud>button:nth-child(5){font-size:clamp(34px,4.2vw,62px)!important;bottom:3%;left:0}.business-stage .sector-cloud>button:nth-child(6){font-size:clamp(22px,2.8vw,40px)!important;bottom:8%;right:3%;color:#6d8291}
 .sector-detail{position:relative;background:#fff;padding:80px 8%;border-top:8px solid #007bff;opacity:0;transform:translateY(20px);transition:.25s ease}.sector-detail.open{opacity:1;transform:none}.sector-detail h2{font-size:clamp(50px,7vw,95px);line-height:.9;letter-spacing:-5px;margin:0 0 25px}.sector-detail>p{font-size:19px;color:#4b6074;max-width:700px}.sector-jobs{display:grid;grid-template-columns:1fr 1fr;gap:0 35px;margin:38px 0}.sector-jobs span{padding:18px 0;border-top:1px solid #cbd6de;font-weight:700}.sector-close{position:absolute;right:5%;top:35px;border:0;background:#071e30;color:#fff;width:48px;height:48px;border-radius:50%;font-size:30px;cursor:pointer}
 @media(max-width:760px){.business-stage .sector-cloud>button{letter-spacing:-1px!important}.business-stage .sector-cloud>button:nth-child(1){font-size:42px!important}.business-stage .sector-cloud>button:nth-child(2){font-size:34px!important}.business-stage .sector-cloud>button:nth-child(3){font-size:38px!important;left:2%}.business-stage .sector-cloud>button:nth-child(4){font-size:31px!important}.business-stage .sector-cloud>button:nth-child(5){font-size:36px!important}.business-stage .sector-cloud>button:nth-child(6){font-size:27px!important}.sector-detail{padding:70px 6%}.sector-detail h2{font-size:54px;letter-spacing:-3px}.sector-jobs{grid-template-columns:1fr}.sector-close{right:6%;top:22px}}
+
+/* Sector personalities and transitions */
+.sector-detail{isolation:isolate;overflow:hidden;--sector-accent:#007bff;--sector-bg:#fff;--sector-ink:#071e30;background:var(--sector-bg);color:var(--sector-ink);border-top-color:var(--sector-accent)}
+.sector-detail:before{content:"";position:absolute;z-index:-1;width:420px;height:420px;border:70px solid var(--sector-accent);opacity:.07;border-radius:50%;right:-120px;bottom:-210px;transform:rotate(15deg)}
+.sector-detail[data-sector="comercios"]{--sector-accent:#007bff;--sector-bg:#fff}
+.sector-detail[data-sector="oficinas"]{--sector-accent:#16a3a5;--sector-bg:#f2f8f8}
+.sector-detail[data-sector="restauracion"]{--sector-accent:#e0643a;--sector-bg:#fff6f1}
+.sector-detail[data-sector="alojamientos"]{--sector-accent:#7256c7;--sector-bg:#f7f4ff}
+.sector-detail[data-sector="inmobiliarias"]{--sector-accent:#b58118;--sector-bg:#fffaf0}
+.sector-detail[data-sector="clinicas"]{--sector-accent:#1b8f72;--sector-bg:#f1faf7}
+.sector-detail .kicker{color:var(--sector-accent)}.sector-detail .button{background:var(--sector-accent)}
+.sector-symbol{position:absolute;right:9%;top:50%;transform:translateY(-50%);font-size:clamp(170px,25vw,360px);font-weight:900;line-height:1;color:var(--sector-accent);opacity:.08;pointer-events:none}
+.sector-detail[data-sector="oficinas"] .sector-symbol{transform:translateY(-50%) rotate(12deg)}
+.sector-detail[data-sector="restauracion"] .sector-symbol{border-radius:50%}
+.sector-detail[data-sector="alojamientos"]:before{border-radius:0;transform:rotate(45deg)}
+.sector-detail[data-sector="inmobiliarias"] .sector-symbol{transform:translateY(-50%) rotate(20deg)}
+.sector-detail[data-sector="clinicas"] .sector-symbol{font-weight:400}
+.sector-detail.sector-swap h2,.sector-detail.sector-swap>p,.sector-detail.sector-swap .sector-jobs,.sector-detail.sector-swap .sector-symbol{animation:sectorIn .5s cubic-bezier(.2,.7,.2,1) both}
+.sector-detail.sector-swap>p{animation-delay:.05s}.sector-detail.sector-swap .sector-jobs{animation-delay:.1s}
+@keyframes sectorIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.sector-detail.sector-swap .sector-symbol{animation-name:sectorSymbolIn}
+@keyframes sectorSymbolIn{from{opacity:0;scale:.85}to{opacity:.08;scale:1}}
+.sector-jobs span{position:relative;padding-left:24px}.sector-jobs span:before{content:"";position:absolute;left:0;top:25px;width:8px;height:8px;background:var(--sector-accent);border-radius:50%}
+@media(max-width:760px){.sector-symbol{right:-25px;top:105px;font-size:145px}.sector-detail:before{width:250px;height:250px;border-width:45px}.sector-detail h2{position:relative;z-index:1}}
