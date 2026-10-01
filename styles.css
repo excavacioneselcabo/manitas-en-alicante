@@ -65,3 +65,13 @@
 .need-three h3 em{color:#087df0}.need-three p{color:#5d7080}
 .needs-mark{position:absolute;right:-55px;bottom:-100px;font-size:300px;line-height:1;color:rgba(7,30,48,.06);font-weight:300;pointer-events:none}
 @media(max-width:760px){.needs-stage{padding:70px 6%}.needs-head{display:block;margin-bottom:42px}.needs-head h2{font-size:56px;letter-spacing:-3px;margin-bottom:25px}.needs-head>p{max-width:320px}.needs-visual{display:flex;flex-direction:column;min-height:0;gap:12px}.need,.need-one,.need-two,.need-three{min-height:300px;padding:36px 28px}.need-one{min-height:390px}.need h3{font-size:49px;letter-spacing:-3px}.needs-mark{display:none}}
+
+
+/* Mobile fix — prevent overlap in “Menos gestiones, más soluciones” */
+@media(max-width:760px){
+  .agile-content h2{font-size:clamp(46px,14vw,62px);line-height:1.02;letter-spacing:-3px;margin-bottom:30px;overflow-wrap:normal;word-break:normal}
+  .agile-content h2 em{display:inline;line-height:inherit}
+}
+@media(max-width:390px){
+  .agile-content h2{font-size:clamp(43px,13.5vw,54px);line-height:1.06;letter-spacing:-2.5px}
+}
