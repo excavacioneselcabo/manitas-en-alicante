@@ -149,3 +149,15 @@
 .business-stage .sector-cloud>button:nth-child(5){color:#b58118!important}
 .business-stage .sector-cloud>button:nth-child(6){color:#1b8f72!important}
 .business-stage .sector-cloud>button:hover,.business-stage .sector-cloud>button:focus-visible{filter:brightness(.82);transform:scale(1.07)}
+
+/* Final sector cloud spacing: keep all labels visually separated */
+.business-stage .sector-cloud{min-height:620px!important}
+.business-stage .sector-cloud>button:nth-child(1){top:2%!important;left:1%!important}
+.business-stage .sector-cloud>button:nth-child(2){top:20%!important;right:1%!important}
+.business-stage .sector-cloud>button:nth-child(3){top:38%!important;left:7%!important}
+.business-stage .sector-cloud>button:nth-child(4){top:56%!important;right:2%!important}
+.business-stage .sector-cloud>button:nth-child(5){top:73%!important;bottom:auto!important;left:0!important}
+.business-stage .sector-cloud>button:nth-child(6){top:90%!important;bottom:auto!important;right:2%!important;transform:translateY(-100%)}
+.business-stage .sector-cloud>button:nth-child(6):hover,.business-stage .sector-cloud>button:nth-child(6):focus-visible{transform:translateY(-100%) scale(1.07)}
+@media(max-width:760px){.business-stage .sector-cloud{min-height:560px!important}.business-stage .sector-cloud>button:nth-child(1){top:1%!important}.business-stage .sector-cloud>button:nth-child(2){top:18%!important}.business-stage .sector-cloud>button:nth-child(3){top:35%!important;left:1%!important}.business-stage .sector-cloud>button:nth-child(4){top:52%!important}.business-stage .sector-cloud>button:nth-child(5){top:69%!important;left:0!important;font-size:32px!important}.business-stage .sector-cloud>button:nth-child(6){top:88%!important;right:2%!important;font-size:25px!important}}
+@media(max-width:390px){.business-stage .sector-cloud{min-height:535px!important}.business-stage .sector-cloud>button:nth-child(5){font-size:29px!important}.business-stage .sector-cloud>button:nth-child(6){font-size:23px!important}}
