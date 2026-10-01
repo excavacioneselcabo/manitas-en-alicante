@@ -140,3 +140,12 @@
 .business-stage .sector-cloud>button:nth-child(6){bottom:17%!important;right:1%!important}
 @media(max-width:760px){.business-stage .sector-cloud{min-height:470px}.business-stage .sector-cloud>button:nth-child(5){bottom:2%!important;left:0!important;font-size:34px!important}.business-stage .sector-cloud>button:nth-child(6){bottom:17%!important;right:2%!important;font-size:25px!important}}
 @media(max-width:390px){.business-stage .sector-cloud>button:nth-child(5){font-size:31px!important}.business-stage .sector-cloud>button:nth-child(6){font-size:23px!important;bottom:18%!important}}
+
+/* Match sector selector labels to their detail accent */
+.business-stage .sector-cloud>button:nth-child(1){color:#007bff!important}
+.business-stage .sector-cloud>button:nth-child(2){color:#16a3a5!important}
+.business-stage .sector-cloud>button:nth-child(3){color:#e0643a!important}
+.business-stage .sector-cloud>button:nth-child(4){color:#7256c7!important}
+.business-stage .sector-cloud>button:nth-child(5){color:#b58118!important}
+.business-stage .sector-cloud>button:nth-child(6){color:#1b8f72!important}
+.business-stage .sector-cloud>button:hover,.business-stage .sector-cloud>button:focus-visible{filter:brightness(.82);transform:scale(1.07)}
