@@ -90,3 +90,16 @@
 .contact-action>a b{color:#007bff;font-size:36px;flex:none}
 .contact-action>p{font-size:14px;color:#8fa4b4;margin-top:20px}
 @media(max-width:760px){.contact-stage{grid-template-columns:1fr;gap:55px;padding:70px 6%}.contact-copy h2{font-size:54px;letter-spacing:-3px}.contact-action>a{font-size:clamp(18px,5vw,24px);gap:10px}.contact-action>a b{font-size:28px}}
+
+
+/* Clear service request form */
+.contact-form{background:#fff;color:#071e30;padding:34px;min-width:0}
+.contact-form label{display:block;font-size:12px;font-weight:900;letter-spacing:.8px;margin-bottom:20px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-form input,.contact-form select,.contact-form textarea{display:block;width:100%;margin-top:9px;border:1px solid #cbd6de;background:#f7f9fa;color:#071e30;border-radius:0;padding:15px 14px;font:inherit;font-size:16px;outline:none}
+.contact-form textarea{resize:vertical;min-height:130px}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:#007bff;box-shadow:0 0 0 2px rgba(0,123,255,.15)}
+.contact-form button{width:100%;border:0;background:#007bff;color:#fff;padding:18px 20px;font-size:17px;font-weight:900;display:flex;align-items:center;justify-content:space-between;cursor:pointer}
+.contact-form button span{font-size:25px}
+.contact-form small{display:block;color:#607486;font-size:12px;line-height:1.45;margin-top:13px}
+@media(max-width:760px){.contact-form{padding:25px 20px}.form-row{grid-template-columns:1fr}.contact-form input,.contact-form select,.contact-form textarea{font-size:16px}.contact-copy h2{font-size:clamp(44px,13vw,54px);line-height:.96}}
