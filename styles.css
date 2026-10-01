@@ -18,3 +18,14 @@
 .business-stage .sector-cloud>span:nth-child(5){font-size:clamp(34px,4.2vw,62px)!important;bottom:3%!important;left:0!important;right:auto!important;top:auto!important}
 .business-stage .sector-cloud>span:nth-child(6){font-size:clamp(22px,2.8vw,40px)!important;bottom:8%!important;right:3%!important;left:auto!important;top:auto!important;color:#6d8291}
 @media(max-width:760px){.business-stage .sector-cloud{min-height:430px}.business-stage .sector-cloud>span{letter-spacing:-1px!important}.business-stage .sector-cloud>span:nth-child(1){font-size:42px!important}.business-stage .sector-cloud>span:nth-child(2){font-size:34px!important}.business-stage .sector-cloud>span:nth-child(3){font-size:38px!important;left:2%!important}.business-stage .sector-cloud>span:nth-child(4){font-size:31px!important}.business-stage .sector-cloud>span:nth-child(5){font-size:36px!important}.business-stage .sector-cloud>span:nth-child(6){font-size:27px!important}}
+
+/* Keep editorial scenes safely inside viewport */
+.problem-editorial{overflow:hidden}
+.problem-scenes{width:100%;min-width:0;overflow:hidden}
+.scene{max-width:78%;box-sizing:border-box}
+.scene-a{left:3%;right:auto}
+.scene-b{right:4%;left:auto}
+.scene-c{left:15%;right:auto}
+.scene h3{overflow-wrap:normal;word-break:normal}
+@media(max-width:1100px){.problem-editorial{grid-template-columns:42% 58%;gap:3%}.scene{max-width:88%}.scene h3{font-size:clamp(34px,4.2vw,54px)}}
+@media(max-width:760px){.problem-editorial{grid-template-columns:1fr;overflow:hidden}.problem-scenes{min-height:auto;display:flex;flex-direction:column;gap:52px;padding:10px 0 5px}.scene,.scene-a,.scene-b,.scene-c{position:relative;top:auto;right:auto;bottom:auto;left:auto;max-width:100%;width:100%;text-align:left}.scene-b{align-self:flex-end;text-align:right}.scene h3{font-size:clamp(38px,11vw,52px);letter-spacing:-2px;max-width:100%}.scene p{white-space:normal}}
