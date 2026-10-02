@@ -321,3 +321,51 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:24px;fl
     font-size:12.5px!important;letter-spacing:-.5px!important;
   }
 }
+
+
+/* Desktop-only business sector alignment — 2026-10-02 */
+@media(min-width:761px){
+  .business-stage{
+    padding-left:5%!important;
+    padding-right:5%!important;
+    overflow:hidden!important;
+  }
+  .business-stage .sector-cloud.sector-mosaic{
+    box-sizing:border-box!important;
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    width:min(1100px,100%)!important;
+    max-width:1100px!important;
+    margin:42px auto 0!important;
+    padding:0!important;
+    gap:14px!important;
+  }
+  .business-stage .sector-cloud.sector-mosaic>button.sector-tile,
+  .business-stage .sector-cloud.sector-mosaic>button.sector-tile:nth-child(n){
+    box-sizing:border-box!important;
+    position:relative!important;
+    inset:auto!important;
+    grid-column:auto!important;
+    grid-row:auto!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:220px!important;
+    min-height:220px!important;
+    margin:0!important;
+    transform:none!important;
+    overflow:hidden!important;
+  }
+  .business-stage .sector-cloud.sector-mosaic>button.sector-tile strong{
+    display:block!important;
+    width:calc(100% - 32px)!important;
+    max-width:calc(100% - 32px)!important;
+    margin:auto 16px 18px!important;
+    font-size:clamp(20px,1.8vw,28px)!important;
+    line-height:1.05!important;
+    letter-spacing:-.5px!important;
+    white-space:nowrap!important;
+    word-break:normal!important;
+    overflow-wrap:normal!important;
+  }
+}
