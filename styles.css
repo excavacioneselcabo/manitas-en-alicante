@@ -426,3 +426,12 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:24px;fl
 .business-stage .sector-cloud.sector-mosaic .sector-card-icon{
   display:none!important;
 }
+
+
+/* Sector photography: brighter and more vivid — 2026-10-02 */
+.business-stage .sector-cloud.sector-mosaic>button.sector-tile{
+  filter:saturate(1.14) contrast(1.06) brightness(1.08)!important;
+}
+.business-stage .sector-cloud.sector-mosaic>button.sector-tile::before{
+  background:linear-gradient(to bottom,rgba(8,18,32,.02) 45%,rgba(8,18,32,.42) 100%)!important;
+}
