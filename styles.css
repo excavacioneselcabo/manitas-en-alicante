@@ -420,3 +420,9 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:24px;fl
     min-height:215px!important;
   }
 }
+
+
+/* Sector cards: photo + label only — 2026-10-02 */
+.business-stage .sector-cloud.sector-mosaic .sector-card-icon{
+  display:none!important;
+}
