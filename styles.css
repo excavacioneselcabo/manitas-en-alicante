@@ -463,3 +463,40 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:24px;fl
     text-align:center!important;
   }
 }
+
+
+/* Mobile needs section centered — 2026-10-02 */
+@media(max-width:760px){
+  .needs-stage .needs-visual{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:100%!important;
+    text-align:center!important;
+  }
+  .needs-stage .needs-visual .need,
+  .needs-stage .needs-visual .need-one,
+  .needs-stage .needs-visual .need-two,
+  .needs-stage .needs-visual .need-three{
+    position:relative!important;
+    inset:auto!important;
+    left:auto!important;
+    right:auto!important;
+    top:auto!important;
+    bottom:auto!important;
+    transform:none!important;
+    width:100%!important;
+    max-width:100%!important;
+    margin:0 auto 42px!important;
+    text-align:center!important;
+  }
+  .needs-stage .needs-visual .need span,
+  .needs-stage .needs-visual .need h3,
+  .needs-stage .needs-visual .need p{
+    text-align:center!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  .needs-stage .needs-mark{display:none!important}
+}
