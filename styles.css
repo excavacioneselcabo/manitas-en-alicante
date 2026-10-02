@@ -205,3 +205,52 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:24px;fl
 .service-stage .service-mosaic{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-auto-flow:row!important;grid-auto-rows:210px!important;gap:12px!important;width:100%!important;height:auto!important;align-items:stretch!important}
 .service-stage .service-mosaic>.service-tile,.service-stage .service-mosaic>.service-tile:nth-child(n){position:relative!important;display:flex!important;grid-column:auto!important;grid-row:auto!important;width:100%!important;max-width:none!important;height:210px!important;min-height:210px!important;margin:0!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;transform:none!important}
 }
+
+
+/* Tu negocio — wider sector cards and readable labels */
+.business-stage .sector-cloud.sector-mosaic{
+  width:min(1180px,100%)!important;
+  max-width:1180px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:16px!important;
+}
+.business-stage .sector-cloud.sector-mosaic .sector-tile,
+.business-stage .sector-cloud.sector-mosaic .sector-tile:nth-child(n){
+  position:relative!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  height:230px!important;
+  margin:0!important;
+  inset:auto!important;
+  transform:none!important;
+  overflow:hidden!important;
+}
+.business-stage .sector-cloud.sector-mosaic .sector-tile span,
+.business-stage .sector-cloud.sector-mosaic .sector-tile h3{
+  overflow:visible!important;
+  text-overflow:clip!important;
+  white-space:normal!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+  hyphens:none!important;
+}
+@media(max-width:760px){
+  .business-stage .sector-cloud.sector-mosaic{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+    width:100%!important;
+  }
+  .business-stage .sector-cloud.sector-mosaic .sector-tile,
+  .business-stage .sector-cloud.sector-mosaic .sector-tile:nth-child(n){
+    height:190px!important;
+  }
+  .business-stage .sector-cloud.sector-mosaic .sector-tile span,
+  .business-stage .sector-cloud.sector-mosaic .sector-tile h3{
+    font-size:clamp(15px,4.2vw,20px)!important;
+    line-height:1.05!important;
+  }
+}
