@@ -435,3 +435,6 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:24px;fl
 .business-stage .sector-cloud.sector-mosaic>button.sector-tile::before{
   background:linear-gradient(to bottom,rgba(8,18,32,.02) 45%,rgba(8,18,32,.42) 100%)!important;
 }
+
+/* Mobile hamburger menu — 2026-10-02 */
+@media(max-width:760px){.menu{width:44px!important;height:44px!important;padding:0!important;border:0!important;background:transparent!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:5px!important}.menu span{display:block!important;width:24px!important;height:2px!important;background:#071e30!important;border-radius:2px!important;transition:transform .22s ease,opacity .18s ease!important;transform-origin:center!important}.menu[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)!important}.menu[aria-expanded="true"] span:nth-child(2){opacity:0!important}.menu[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)!important}}
