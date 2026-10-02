@@ -369,3 +369,54 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:24px;fl
     overflow-wrap:normal!important;
   }
 }
+
+
+/* Laptop business section — balance copy + sector grid, 2026-10-02 */
+@media(min-width:761px){
+  .business-stage{
+    display:grid!important;
+    grid-template-columns:minmax(330px,40%) minmax(0,60%)!important;
+    align-items:center!important;
+    column-gap:28px!important;
+    padding:72px 4.5%!important;
+  }
+  .business-stage .business-intro{
+    width:100%!important;
+    max-width:520px!important;
+    margin:0!important;
+  }
+  .business-stage .sector-cloud.sector-mosaic{
+    width:100%!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:10px!important;
+    align-self:center!important;
+  }
+  .business-stage .sector-cloud.sector-mosaic>button.sector-tile,
+  .business-stage .sector-cloud.sector-mosaic>button.sector-tile:nth-child(n){
+    height:190px!important;
+    min-height:190px!important;
+  }
+  .business-stage .sector-cloud.sector-mosaic>button.sector-tile strong{
+    width:calc(100% - 20px)!important;
+    max-width:calc(100% - 20px)!important;
+    margin:auto 10px 13px!important;
+    font-size:clamp(16px,1.45vw,23px)!important;
+    letter-spacing:-.45px!important;
+  }
+}
+@media(min-width:1200px){
+  .business-stage{
+    grid-template-columns:minmax(390px,42%) minmax(0,58%)!important;
+    column-gap:38px!important;
+    padding-left:5%!important;
+    padding-right:5%!important;
+  }
+  .business-stage .sector-cloud.sector-mosaic>button.sector-tile,
+  .business-stage .sector-cloud.sector-mosaic>button.sector-tile:nth-child(n){
+    height:215px!important;
+    min-height:215px!important;
+  }
+}
